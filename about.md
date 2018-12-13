@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Pusan National Univ. Bioinformatics & Data mining lab.
 
-### More Information
+Want to be a intelligent adventurer.
 
-A place to include any other types of information that you'd like to include about yourself.
+Want to be a curious developer.
+
+Want to be a scientist.
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[dhehdqls@gmail.com](mailto:dhehdqls@gmail.com)
