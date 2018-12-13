@@ -21,12 +21,12 @@ footer-links:
   email: dhehdqls@gmail.com
   facebook:
   flickr:
-  github: odb9402
-  instagram:
-  linkedin:
+  github: https://github.com/odb9402
+  instagram: dongbin_o
+  linkedin: https://www.linkedin.com/in/dongpin-oh-ba271b154/
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
