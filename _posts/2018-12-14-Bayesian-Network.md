@@ -17,7 +17,7 @@ C((X2)) --> B;
 D((X3)) --> B;
 ```
 
-This graph indicates conditional probability : $p(Y|X_1,X_2,X_3)$  So, each node of the graph is random variables and directional edges are conditional dependencies.
+This graph indicates conditional probability : $p(Y\|X_1,X_2,X_3)$  So, each node of the graph is random variables and directional edges are conditional dependencies.
 
 But, why we need to make these graphical structure?
 
