@@ -23,7 +23,7 @@ This graph indicates conditional probability : $P(Y\|X_1,X_2,X_3)$  So, each nod
 |------------|-----------|------------|
 | X3 = True  | 0.98      | 0.34       |
 | X3 = False | 0.32      | 0.18       |
-
+<br><br>
 | X1 = False | X2 = True | X2 = False |
 |------------|-----------|------------|
 | X3 = True  | 0.22      | 0.09       |
@@ -31,8 +31,7 @@ This graph indicates conditional probability : $P(Y\|X_1,X_2,X_3)$  So, each nod
 
 For **Xn** random varables, there is only one elements in their table for $P(X_n=True)$  because it has no conditional random variable, it is just stand alone.
 
-| 0.73 |
-|------|
+<table><tr><th>0.73</th></tr></table>
 
 
 ## Reducing computation with proper conditional probability structure
