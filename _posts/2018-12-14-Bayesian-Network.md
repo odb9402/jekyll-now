@@ -11,7 +11,7 @@ Usually, most of machine learning models can be represented as a conditional pro
 So, Bayesian Network is  just a probabilistic graphical model which can represent some conditional probabilities. We already know many problem can be considered as conditional probabilities. Upside notation is conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics,  conditional probability everywhere. The example of bayesian network is below.
 
 {% mermaid %}
-graph TD
+graph TD;
 A((X1)) --> B((Y));
 C((X2)) --> B;
 D((X3)) --> B;
@@ -45,7 +45,7 @@ $$
 
 And the graphical structure of upper equation is:
 {% mermaid %}
-graph TD
+graph TD;
 A((Weather)) --> Y((MOOD));
 B((Knee)) --> Y;
 C((Course)) --> Y;
@@ -56,17 +56,17 @@ F((IU)) --> Y;
 
 Well, there are so many possible cases for this equation actually. 3 possible weather * 2 possible my knee statements, ... , and so on. So, the number of all possible cases is (3 * 2 * 2 * 3 * 2 * 2) = 144. I do not want to compute this complex information just to predict her daily mood.
 
-However, we already know that some parameters are highly related to each other. My horrible pain on knee depend on weather somehow, quality of date course might depend on dining reservation cost. And of course, I just realize our result does not give a shit about  IU`s album release. Let adjust our graph with our new knowledge.
+However, we already know that some parameters are highly related to each other. My horrible pain on knee depend on weather somehow, quality of date course might depend on dining reservation cost. And of course, I just realize our result does not give a shit about  IU's album release. Let adjust our graph with our new knowledge.
 
 {% mermaid %}
-graph TD
+graph TD;
 A((Weather)) --> Y;
 B((Knee)) --> A;
 C((Course)) --> Y;
 D((Cost)) --> C;
 E((PastMood)) --> Y;
-F((IU))
-Y((MOOD))
+F((IU));
+Y((MOOD));
 {% endmermaid %}
 
 We will check this adjusted graph is helpful for our computation or not. How can we change our prior equation with this new-graph structure? We can rewrite our original equation by using chain rule. $P(X,Y,Z)=P(X|Y,Z)P(Y,Z)=P(X|Y,Z)P(Y|Z)P(Z)$. And of course if there are proper conditional probabilities, we can remove some random variable for each probability. We call it conditional independence. If when Z is given then X and Y independence, upper equation will change : $P(X|Z)P(Y|Z)P(Z)$. Y has gone. This elimination is a main reason to use conditional independence.
