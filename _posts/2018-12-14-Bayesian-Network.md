@@ -22,9 +22,7 @@ This graph indicates conditional probability : $P(Y\|X_1,X_2,X_3)$  So, each nod
 | X1 = True  | X2 = True | X2 = False |
 |------------|-----------|------------|
 | X3 = True  | 0.98      | 0.34       |
-| X3 = False | 0.32      | 0.18       |
-
-
+| X3 = False | 0.32      | 0.18       |  
 
 | X1 = False | X2 = True | X2 = False |
 |------------|-----------|------------|
