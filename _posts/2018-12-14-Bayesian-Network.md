@@ -9,7 +9,7 @@ Usually, most of machine learning models can be represented as a conditional pro
  > P( **"Something I want to know" \|  "Our data"** )
 
 So, Bayesian Network is  just a probabilistic graphical model which can represent some conditional probabilities. We already know many problem can be considered as conditional probabilities. Upside notation is conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics,  conditional probability everywhere. The example of bayesian network is below.
-<script src="mermaid.js"></script>
+
 <div class="mermaid">
 graph TD;
 A((X1)) --> B((Y));
