@@ -33,6 +33,7 @@ Let assume our problem is that predicting mood of girl friend before we will mee
 - 5 Her mood at 1 week ago(**Past mood**) = { GOOD, BAD }
 - 6 Whether or IU today released an album(**IU**) = { YES, NO }
 
+
 - **Our Final Goal(Mood)** : "Her Daily Mood" = { GOOD, BAD }
  
 You might think why your arthritis statement is a consideration for this problem, but it will be highly related to weather of today since I have felt pain on my knee almost every rainy time. Of course, our emotional girlfriend also will feel bad if the weather will not OK. And we already know our adorable girl friend always forget her mood after 1 week. Yes, what an adorable women. And sixth parameter, about South Korean singer IU, might be no relation with mood of my girlfriend even if IU is super adorable.
