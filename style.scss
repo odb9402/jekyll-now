@@ -304,10 +304,10 @@ footer {
   background-color: #e8e8e8;
 }
 .cluster rect {
-  fill: #ffffde !important;
-  rx: 4 !important;
-  stroke: #aaaa33 !important;
-  stroke-width: 1px !important;
+  fill: #ffffde ;
+  rx: 4 ;
+  stroke: #aaaa33 ;
+  stroke-width: 1px ;
 }
 .cluster text {
   fill: #333;
@@ -338,8 +338,8 @@ text.actor {
   fill: #333;
 }
 #crosshead path {
-  fill: #333 !important;
-  stroke: #333 !important;
+  fill: #333 ;
+  stroke: #333 ;
 }
 .messageText {
   fill: #333;
@@ -474,7 +474,7 @@ text.actor {
 .activeText1,
 .activeText2,
 .activeText3 {
-  fill: black !important;
+  fill: black;
 }
 /* Completed task */
 .done0,
@@ -489,7 +489,7 @@ text.actor {
 .doneText1,
 .doneText2,
 .doneText3 {
-  fill: black !important;
+  fill: black;
 }
 /* Tasks on the critical line */
 .crit0,
@@ -522,13 +522,13 @@ text.actor {
 .doneCritText1,
 .doneCritText2,
 .doneCritText3 {
-  fill: black !important;
+  fill: black ;
 }
 .activeCritText0,
 .activeCritText1,
 .activeCritText2,
 .activeCritText3 {
-  fill: black !important;
+  fill: black ;
 }
 .titleText {
   text-anchor: middle;
