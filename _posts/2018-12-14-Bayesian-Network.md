@@ -70,7 +70,7 @@ F((IU));
 Y((MOOD));
 ```
 
-We will check this adjusted graph is helpful for our computation or not. How can we change our prior equation with this new-graph structure? We can rewrite our original equation by using chain rule. $P(X,Y,Z)=P(X|Y,Z)P(Y,Z)=P(X|Y,Z)P(Y|Z)P(Z)$. And of course if there are proper conditional probabilities, we can remove some random variable for each probability. We call it conditional independence. If when Z is given then X and Y independence, upper equation will change : $P(X|Z)P(Y|Z)P(Z)$. Y has gone. This elimination is a main reason to use conditional independence.
+We will check this adjusted graph is helpful for our computation or not. How can we change our prior equation with this new-graph structure? We can rewrite our original equation by using chain rule. $P(X,Y,Z)=P(X\|Y,Z)P(Y,Z)=P(X\|Y,Z)P(Y\|Z)P(Z)$. And of course if there are proper conditional probabilities, we can remove some random variable for each probability. We call it conditional independence. If when Z is given then X and Y independence, upper equation will change : $P(X\|Z)P(Y\|Z)P(Z)$. Y has gone. This elimination is a main reason to use conditional independence.
 
 $$
 P(Mood, Weather, Knee, Course, Cost, PastMood , IU)\\
