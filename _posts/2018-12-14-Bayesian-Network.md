@@ -11,7 +11,7 @@ Usually, most of machine learning models can be represented as a conditional pro
 So, Bayesian Network is  just a probabilistic graphical model which can represent some conditional probabilities. We already know many problem can be considered as conditional probabilities. Upside notation is conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics,  conditional probability everywhere. The example of bayesian network is below.
 
 <div class="mermaid">
-graph TD;
+graph TD
 A((X1)) --> B((Y));
 C((X2)) --> B;
 D((X3)) --> B;
@@ -47,7 +47,7 @@ $$
 And the graphical structure of upper equation is:
 
 <div class="mermaid">
-graph TD;
+graph TD
 A((Weather)) --> Y((MOOD));
 B((Knee)) --> Y;
 C((Course)) --> Y;
@@ -61,7 +61,7 @@ Well, there are so many possible cases for this equation actually. 3 possible we
 However, we already know that some parameters are highly related to each other. My horrible pain on knee depend on weather somehow, quality of date course might depend on dining reservation cost. And of course, I just realize our result does not give a shit about  IU's album release. Let adjust our graph with our new knowledge.
 
 <div class="mermaid">
-graph TD;
+graph TD
 A((Weather)) --> Y;
 B((Knee)) --> A;
 C((Course)) --> Y;
