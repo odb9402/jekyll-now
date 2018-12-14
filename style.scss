@@ -151,11 +151,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 50px; !important
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 0; 
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -164,10 +164,10 @@ img {
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  float: left; !important
+  width: 70px; !important
+  height: 70px; !important
+  margin-right: 15px; !important
 
   @include mobile {
     float: none;
@@ -176,12 +176,12 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 5px; !important
   }
 }
 
 .site-info {
-  float: left;
+  float: left; 
 
   @include mobile {
     float: none;
@@ -213,8 +213,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  font-family: $helveticaNeue; !important
+  font-size: 18px; !important
 
   @include mobile {
     float: none;
@@ -242,8 +242,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding-bottom: 2em; !important
+  border-bottom: 1px solid $lightGray; !important
 }
 
 .posts > .post:last-child {
@@ -272,10 +272,10 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 50px; !important
+  border-top: 1px solid #ddd; !important
+  border-bottom: 1px solid #ddd; !important
+  background-color: $lightGray; !important
 }
 
 footer {
