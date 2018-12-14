@@ -25,12 +25,12 @@ But, why we need to make these graphical structure?
 -----
 Let assume our problem is that predicting mood of girl friend before we will meet her. We can consider 6 parameters. 
 
-- 1. Weather of today(**Weather**) = { Rainy, Sunny, Cloudy } 
-- 2. My Arthritis(**Knee**) = { Painful, Stable }
-- 3. Today`s date course(**Course**) = { Nice , Suck }
-- 4. Dining reservation cost(**Cost**) = { \$, \$\$, \$\$\$ }
-- 5. Her mood at 1 week ago(**Past mood**) = { GOOD, BAD }
-- 6. Whether or IU today released an album(**IU**) = { YES, NO }
+- 1 Weather of today(**Weather**) = { Rainy, Sunny, Cloudy } 
+- 2 My Arthritis(**Knee**) = { Painful, Stable }
+- 3 Today`s date course(**Course**) = { Nice , Suck }
+- 4 Dining reservation cost(**Cost**) = { \$, \$\$, \$\$\$ }
+- 5 Her mood at 1 week ago(**Past mood**) = { GOOD, BAD }
+- 6 Whether or IU today released an album(**IU**) = { YES, NO }
 
 - **Our Final Goal(Mood)** : "Her Daily Mood" = { GOOD, BAD }
  
