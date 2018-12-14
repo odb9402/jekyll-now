@@ -6,7 +6,7 @@ title: Bayesian network
 ### Bayesian Network (Graphical Model)
 -----
 Usually, most of machine learning models can be represented as a conditional probability as like :
- > P( **"Something I want to know" |  "Our data"** )
+ > P( **"Something I want to know" \|  "Our data"** )
 
 So, Bayesian Network is  just a probabilistic graphical model which can represent some conditional probabilities. We already know many problem can be considered as conditional probabilities. Upside notation is conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics,  conditional probability everywhere. The example of bayesian network is below.
 
@@ -37,9 +37,11 @@ Let assume our problem is that predicting mood of girl friend before we will mee
 You might think why your arthritis statement is a consideration for this problem, but it will be highly related to weather of today since I have felt pain on my knee almost every rainy time. Of course, our emotional girlfriend also will feel bad if the weather will not OK. And we already know our adorable girl friend always forget her mood after 1 week. Yes, what an adorable women. And sixth parameter, about South Korean singer IU, might be no relation with mood of my girlfriend even if IU is super adorable.
 
 Anyway, to predict her daily emotion, here is your equation.
+
 $$
 \sum_{All PossibleParameters}{P(Mood = good, Weather, Knee, Course, Cost, PastMood, IU)}
 $$
+
 And the graphical structure of upper equation is:
 ```mermaid
 graph TD
@@ -69,15 +71,15 @@ We will check this adjusted graph is helpful for our computation or not. How can
 
 $$
 P(Mood, Weather, Knee, Course, Cost, PastMood , IU)\\
-=P(Mood|Weather,Knee,Course,Cost,PastMood,IU) P(Weather,Knee,Course,Cost,PastMood,IU)\\
-=P(Mood|Weather,Knee,Course,PastMood) P(Weather,Knee,Course,Cost,PastMood,IU)\\
-=P(Mood|Weather,Course,PastMood) P(Weather|Knee,Course,Cost,PastMood,IU)\\P(Knee,Course,Cost,PastMood,IU)\\
-=P(Mood|Weather,Course,PastMood) P(Weather|Knee)\\P(Knee|Course,Cost,PastMood,IU)P(Course,Cost,PastMood,IU)\\
-=P(Mood|Weather,Course,PastMood) P(Weather|Knee)\\P(Knee)P(Course|Cost,PastMood,IU)P(Cost,PastMood,IU)\\
-=P(Mood|Weather,Course,PastMood) P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost,PastMood,IU)\\
+=P(Mood|Weather,Knee,Course,Cost,PastMood,IU)\\P(Weather,Knee,Course,Cost,PastMood,IU)\\
+=P(Mood|Weather,Knee,Course,PastMood)\\P(Weather,Knee,Course,Cost,PastMood,IU)\\
+=P(Mood|Weather,Course,PastMood)\\P(Weather|Knee,Course,Cost,PastMood,IU)\\P(Knee,Course,Cost,PastMood,IU)\\
+=P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee|Course,Cost,PastMood,IU)P(Course,Cost,PastMood,IU)\\
+=P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost,PastMood,IU)P(Cost,PastMood,IU)\\
+=P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost,PastMood,IU)\\
 $$
 $$
-=P(Mood|Weather,Course,PastMood) P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost)P(PastMood)P(IU)\\
+=P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost)P(PastMood)P(IU)\\
 $$
 
 The number of computation 3 * 2 * 2 * 3 * 2 * 2 = 144 is changed to (3 * 2 * 2) + ( 2 ) + ( 3 ) = 17. From now on, I do not have to be slapped by my girlfriend because of her bad mood. I just predict a probability and I will cancel the date if her mood would be bad.
