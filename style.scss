@@ -155,7 +155,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px; !important
+  margin-bottom: 50px;
 }
 
 .masthead {
@@ -168,10 +168,10 @@ img {
 }
 
 .site-avatar {
-  float: left; !important
-  width: 70px; !important
-  height: 70px; !important
-  margin-right: 15px; !important
+  float: left;
+  width: 70px !important; 
+  height: 70px !important;
+  margin-right: 15px;
 
   @include mobile {
     float: none;
@@ -180,7 +180,7 @@ img {
   }
 
   img {
-    border-radius: 5px; !important
+    border-radius: 5px !important; 
   }
 }
 
@@ -217,8 +217,8 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; !important
-  font-size: 18px; !important
+  font-family: $helveticaNeue !important;
+  font-size: 18px !important;
 
   @include mobile {
     float: none;
@@ -246,8 +246,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em; !important
-  border-bottom: 1px solid $lightGray; !important
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
@@ -276,10 +276,10 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px; !important
-  border-top: 1px solid #ddd; !important
-  border-bottom: 1px solid #ddd; !important
-  background-color: $lightGray; !important
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
 }
 
 footer {
