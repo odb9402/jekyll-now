@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Bayesian network
+title: Machine learning problem with Bayesian Network
 ---
 
-### Bayesian Network (Graphical Model)
------
+## Bayesian Network (Graphical Model)
+
 Usually, most of machine learning models can be represented as a conditional probability as like :
  > P( **"Something I want to know" \|  "Our data"** )
 
@@ -17,13 +17,26 @@ C((X2)) --> B;
 D((X3)) --> B;
 </div>
 
-This graph indicates conditional probability : $p(Y\|X_1,X_2,X_3)$  So, each node of the graph is random variables and directional edges are conditional dependencies.
+This graph indicates conditional probability : $P(Y\|X_1,X_2,X_3)$  So, each node of the graph is random variables and directional edges are conditional dependencies. And each node has a conditional probability table. If random variable **Y** of the upper graphical model and Each **Xn** variable has two possible values <True, False> , The probability table of $P(Y=True\|X_1, X_2, X_3)$ have $2^3$ elements because it has 3 conditional variables and possible events for them are 2. To represent this 3-dimensional table, we need two table for our conditional probability about either X1 is true or not.
 
-But, why we need to make these graphical structure?
+| X1 = True  | X2 = True | X2 = False |
+|------------|-----------|------------|
+| X3 = True  | 0.98      | 0.34       |
+| X3 = False | 0.32      | 0.18       |
+
+| X1 = False | X2 = True | X2 = False |
+|------------|-----------|------------|
+| X3 = True  | 0.22      | 0.09       |
+| X3 = False | 0.13      | 0.01       |
+
+For **Xn** random varables, there is only one elements in their table for $P(X_n=True)$  because it has no conditional random variable, it is just stand alone.
+
+| 0.73 |
+|------|
 
 
-### Reducing computation with proper conditional probability structure
------
+## Reducing computation with proper conditional probability structure
+
 Let assume our problem is that predicting mood of girl friend before we will meet her. We can consider 6 parameters. 
 
 - 1 Weather of today(**Weather**) = { Rainy, Sunny, Cloudy } 
