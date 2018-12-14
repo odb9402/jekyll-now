@@ -14,110 +14,110 @@
 /**************/
 
 html {
-  font-size: 100%;
+  font-size: 100% !important;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	background: $white !important;
+  font: 18px/1.4 $helvetica !important;
+  color: $darkGray !important;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+  margin: 0 auto !important;
+  max-width: 740px !important;
+  padding: 0 10px !important;
+  width: 100% !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+  font-family: $helveticaNeue !important;
+  color: $darkerGray !important;
+  font-weight: bold !important;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+  line-height: 1.7 !important;
+  margin: 1em 0 15px !important;
+  padding: 0 !important;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.4 !important;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 30px !important;
   a {
-    color: inherit;
+    color: inherit !important;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 24px !important;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  font-size: 18px !important;
+  color: $gray !important;
 }
 
 p {
-  margin: 15px 0;
+  margin: 15px 0 !important;
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
+  color: $blue !important;
+  text-decoration: none !important;
+	cursor: pointer !important;
   &:hover, &:active {
-    color: $blue;
+    color: $blue !important;
   }
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 15px 0 !important;
+  padding-left: 30px !important;
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: disc !important;
 }
 
 ol {
-  list-style-type: decimal;
+  list-style-type: decimal !important;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+  margin: 0 !important;
 }
 
 ul ul, ol ul {
-  list-style-type: circle;
+  list-style-type: circle !important;
 }
 
 em, i {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 img {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
-  max-width: none;
+  max-width: none !important;
 }
 
 .date {
-  font-style: italic;
-  color: $gray;
+  font-style: italic !important;
+  color: $gray !important;
 }
 
 // Specify the color of the selection
@@ -253,21 +253,21 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
+    margin: 1.8em .8em !important;
+    border-left: 2px solid $gray !important;
+    padding: 0.1em 1em !important;
+    color: $gray !important;
+    font-size: 22px !important;
+    font-style: italic !important;
   }
 
   .comments {
-    margin-top: 10px;
+    margin-top: 10px !important;
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+    text-transform: uppercase !important;
+    font-size: 15px !important;
   }
 }
 
