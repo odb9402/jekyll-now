@@ -108,17 +108,20 @@ However, model parameter usually would be learned by training data set at least 
 
 <div class="mermaid">
 graph TD;
-A((D train)) --> B; 
-B(($theta$)) --> Y;
-C((X)) --> Y;
-Y((Y));
+A(($D_{train}$)) --> B; 
+B(($\theta$)) --> Y;
+C(($\hat{x}$)) --> Y;
+Y(($\hat{y}$));
 </div>
 
 With this graphical model, our equation will be change:
+
 $$\sum_{\theta,D}{P(\hat{x},\hat{y},D_{train},\theta)}\\
 =P(\hat{y} \|D_{train},\hat{x},\theta)P(D_{train},\hat{x},\theta)\\
 =P(\hat{y} \|\hat{x},\theta)P(\theta\| D_{train},\hat{x})P(D_{train},\hat{x})\\
 =P(\hat{y} \|\hat{x},\theta)P(\theta\| D_{train})P(D_{train})P(\hat{x})\\
 $$
+
 If our training set and $\hat{x}$ is fixed, probabilities for data can be a constant $\alpha$. The equation is:
+
 $$\sum_{\theta}\alpha P(\hat{y} \|\theta, \hat{x})P(\theta\|D_{train})$$
