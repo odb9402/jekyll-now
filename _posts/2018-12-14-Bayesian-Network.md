@@ -123,4 +123,4 @@ $$
 
 If our training set and $\hat{x}$ is fixed, probabilities for data can be a constant $\alpha$. The equation is:
 
-$$\sum_{\theta}\alpha P(\hat{y} \|\theta, \hat{x})P(\theta\|D_{train})$$
+$$\sum_{\theta}\alpha P(\hat{y} | \theta, \hat{x})P(\theta | D_{train})$$
