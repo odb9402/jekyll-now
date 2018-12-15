@@ -116,9 +116,9 @@ Y((y));
 With this graphical model, our equation will be change:
 
 $$\sum_{\theta,D}{P(\hat{x},\hat{y},D_{train},\theta)}\\
-=P(\hat{y} |D_{train},\hat{x},\theta)P(D_{train},\hat{x},\theta)\\
-=P(\hat{y} |\hat{x},\theta)P(\theta| D_{train},\hat{x})P(D_{train},\hat{x})\\
-=P(\hat{y} |\hat{x},\theta)P(\theta| D_{train})P(D_{train})P(\hat{x})\\
+=P(\hat{y} | D_{train},\hat{x},\theta)P(D_{train},\hat{x},\theta)\\
+=P(\hat{y} | \hat{x},\theta)P(\theta | D_{train},\hat{x})P(D_{train},\hat{x})\\
+=P(\hat{y} | \hat{x},\theta)P(\theta | D_{train})P(D_{train})P(\hat{x})\\
 $$
 
 If our training set and $\hat{x}$ is fixed, probabilities for data can be a constant $\alpha$. The equation is:
