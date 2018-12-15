@@ -108,10 +108,10 @@ However, model parameter usually would be learned by training data set at least 
 
 <div class="mermaid">
 graph TD;
-A(($D_{train}$)) --> B; 
-B(($\theta$)) --> Y;
-C(($\hat{x}$)) --> Y;
-Y(($\hat{y}$));
+A((D train)) --> B; 
+B((parameters)) --> Y;
+C((x)) --> Y;
+Y((y));
 </div>
 
 With this graphical model, our equation will be change:
