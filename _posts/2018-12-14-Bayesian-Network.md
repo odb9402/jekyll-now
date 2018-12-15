@@ -52,9 +52,7 @@ You might think why your arthritis statement is a consideration for this problem
 
 Anyway, to predict her daily emotion, here is your equation.
 
-$$
-\sum_{All PossibleParameters}{P(Mood = good, Weather, Knee, Course, Cost, PastMood, IU)}
-$$
+$$\sum_{All PossibleParameters}{P(Mood = good, Weather, Knee, Course, Cost, PastMood, IU)}$$
 
 And the graphical structure of upper equation is:
 
@@ -94,6 +92,7 @@ P(Mood, Weather, Knee, Course, Cost, PastMood , IU)\\
 =P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost,PastMood,IU)P(Cost,PastMood,IU)\\
 =P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost,PastMood,IU)\\
 $$
+
 $$
 =P(Mood|Weather,Course,PastMood)P(Weather|Knee)\\P(Knee)P(Course|Cost)P(Cost)P(PastMood)P(IU)\\
 $$
