@@ -99,3 +99,26 @@ $$
 $$
 
 The number of computation 3 * 2 * 2 * 3 * 2 * 2 = 144 is changed to (3 * 2 * 2) + ( 2 ) + ( 3 ) = 17. From now on, I do not have to be slapped by my girlfriend because of her bad mood. I just predict a probability and I will cancel the date if her mood would be bad.
+
+## Modeling general machine learning problem
+
+We adapt Bayesian Network into specific problem. However, common machine learning problem can be modeled with this approach? Let assume we have data set for training our model : $D_{train}=\{<x_0,y_0>,...,<x_i, y_i>\}$ and $\hat{x}$ is "new" data, which means our model will predict the value of $\hat{y_j}$ from $\hat{x_j}$  by using model parameters $\theta$. If, our model is just a 1-D gaussian distribution, we only have two parameters, mean and variance. For neural network model, more complex, the weights for each neuron is model parameters.  So, machine learning problem could be considered as finding probability of $\hat{y_j}$ for all possible other parameters.
+$$P(\hat{y}) =\sum{P(\hat{x},\hat{y},D_{train},\theta)}$$
+However, model parameter usually would be learned by training data set at least when the problem is supervised-learning model. 
+
+<div class="mermaid">
+graph TD;
+A((D train)) --> B; 
+B(($theta$)) --> Y;
+C((X)) --> Y;
+Y((Y));
+</div>
+
+With this graphical model, our equation will be change:
+$$\sum_{\theta,D}{P(\hat{x},\hat{y},D_{train},\theta)}\\
+=P(\hat{y} \|D_{train},\hat{x},\theta)P(D_{train},\hat{x},\theta)\\
+=P(\hat{y} \|\hat{x},\theta)P(\theta\| D_{train},\hat{x})P(D_{train},\hat{x})\\
+=P(\hat{y} \|\hat{x},\theta)P(\theta\| D_{train})P(D_{train})P(\hat{x})\\
+$$
+If our training set and $\hat{x}$ is fixed, probabilities for data can be a constant $\alpha$. The equation is:
+$$\sum_{\theta}\alpha P(\hat{y} \|\theta, \hat{x})P(\theta\|D_{train})$$
