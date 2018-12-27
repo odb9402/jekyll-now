@@ -1,0 +1,46 @@
+# **What if neural network does not have activation function**
+
+## Activation function
+ Activation function is a function that would adapted for neurons in neural network after matrix multiplication with layer weights. Well, everyone who has a focus about neural networks might already know what activation function is and what kind of activation function is widely used. But why our network essentially need it? Or even is it possible my network could work without these activation functions?
+![ActivationFunc](https://github.com/odb9402/odb9402.github.io/blob/master/images/activation_func.JPG?raw=true)
+
+## What happen in my network?
+
+![NetworkEx](https://github.com/odb9402/odb9402.github.io/blob/master/images/network_example.JPG?raw=true)
+Let assume a neural network has 1 hidden layer ( layer 1 ). Each edge has a weight value which is just a real number scalar, and each neuron also has a bias value. The sizes of our network are $i,j,k$ for each layer including an input layer.
+
+Where X is an input data, Y is a output and W, W` are layers in our neural network, our notation is :
+$$
+X = \langle x_0,...,x_i \rangle\\
+W = \begin{bmatrix}
+w_{00} & \cdots & w_{0j}\\
+\vdots & \ddots & \vdots\\
+w_{i0} & \cdots & w_{ij}\\
+\end{bmatrix}
+\\
+B = \langle b_0, \cdots, b_j \rangle
+\\
+W' = \begin{bmatrix}
+w'_{00} & \cdots & w'_{0i}\\
+\vdots & \ddots & \vdots\\
+w'_{k0} & \cdots & w'_{kj}\\
+\end{bmatrix}
+\\
+B' = \langle b'_0, \cdots, b'_j \rangle
+\\
+Y=(W'(WX+B)+B')
+$$
+It make sense and we might already have saw for a long time since we met a concept of neural network or similar feed forward networks.
+
+### It Is The Affine Transform.
+
+
+### Linear? Nonlinear?
+
+
+### Nonlinearity -> universial function approximater
+ 
+
+## How about convolution operation?
+
+
