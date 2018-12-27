@@ -8,7 +8,7 @@ title: Machine learning problem with Bayesian Network
 Usually, most of machine learning models can be represented as a conditional probability as like :
  > P( **"Something I want to know" \|  "Our data"** )
 
-So, Bayesian Network is  just a probabilistic graphical model which can represent some conditional probabilities. We already know many problem can be considered as conditional probabilities. Upside notation is conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics,  conditional probability everywhere. The example of bayesian network is below.
+So, Bayesian Network is just a probabilistic graphical model which can represent some conditional probabilities. We already know many problems can be considered as conditional probabilities. Upside notation is a conditional probability of **"Something I want to know"** when **"Our data"** given as well. In statistics and machine learning, conditional probability are everywhere. Thus it is great abstraction and notation to represent machine-learning-like-problems. The example of bayesian network is below.
 
 <div class="mermaid">
 graph TD;
