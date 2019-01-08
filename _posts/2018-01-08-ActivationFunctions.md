@@ -1,4 +1,7 @@
-# **What if neural network does not have activation function**
+---
+layout: post
+title: What if neural network does not have activation function
+---
 
 ## Activation function
  Activation function is a function that would adapted for neurons in neural network after matrix multiplication with layer weights. Well, everyone who has a focus about neural networks might already know what activation function is and what kind of activation function is widely used. But why our network essentially need it? Or even is it possible my network could work without these activation functions?
