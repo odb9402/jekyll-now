@@ -9,6 +9,7 @@ title: What if neural network does not have activation function
 
 ## What happen in my network?
 ![NetworkEx](https://github.com/odb9402/odb9402.github.io/blob/master/images/network_example.JPG?raw=true)
+
 Let assume a neural network has 1 hidden layer ( layer 1 ). Each edge has a weight value which is just a real number scalar, and each neuron also has a bias value. The sizes of our network are $i,j,k$ for each layer including an input layer.
 
 Where X is an input data, Y is a output and W, W` are layers in our neural network, our notation is :
