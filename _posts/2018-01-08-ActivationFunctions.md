@@ -13,8 +13,7 @@ title: What if neural network does not have activation function
 Let assume a neural network has 1 hidden layer ( layer 1 ). Each edge has a weight value which is just a real number scalar, and each neuron also has a bias value. The sizes of our network are $i,j,k$ for each layer including an input layer.
 
 Where X is an input data, Y is a output and W, W` are layers in our neural network, our notation is :
-$$
-X = \langle x_0,...,x_i \rangle\\
+$$X = \langle x_0,...,x_i \rangle\\
 W = \begin{bmatrix}
 w_{00} & \cdots & w_{0j}\\
 \vdots & \ddots & \vdots\\
@@ -31,8 +30,7 @@ w'_{k0} & \cdots & w'_{kj}\\
 \\
 B' = \langle b'_0, \cdots, b'_j \rangle
 \\
-Y=(W'(WX+B)+B')
-$$
+Y=(W'(WX+B)+B')$$
 It make sense and we might already have saw for a long time since we met a concept of neural network or similar feed forward networks. . . Except for activation function. If use activation function $f(X)$ after multiplication, the output $Y$ is : $Y=f(W'(f(WX) +B)) +B'$.  Note that each neuron in neural network without activation function $f$, it is just repetition of multiplications and additions.
 
 ### It Is The Affine Transformation.
