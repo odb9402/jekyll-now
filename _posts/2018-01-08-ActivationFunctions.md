@@ -5,10 +5,15 @@ title: What if neural network does not have activation function
 
 ## Activation function
  Activation function is a function that would adapted for neurons in neural network after matrix multiplication with layer weights. Well, everyone who has a focus about neural networks might already know what activation function is and what kind of activation function is widely used. But why our network essentially need it? Or even is it possible my network could work without these activation functions?
+ 
+{:refdef: style="text-align: center;"}
 ![ActivationFunc](https://github.com/odb9402/odb9402.github.io/blob/master/images/activation_func.JPG?raw=true)
+{: refdef}
 
 ## What happen in my network?
+{:refdef: style="text-align: center;"}
 ![NetworkEx](https://github.com/odb9402/odb9402.github.io/blob/master/images/network_example.JPG?raw=true)
+{: refdef}
 
 Let assume a neural network has 1 hidden layer ( layer 1 ). Each edge has a weight value which is just a real number scalar, and each neuron also has a bias value. The sizes of our network are $i,j,k$ for each layer including an input layer.
 
