@@ -38,7 +38,7 @@ B' = \langle b'_0, \cdots, b'_j \rangle
 \\
 Y=(W'(WX+B)+B')$$
 
-It make sense and we might already have saw for a long time since we met a concept of neural network or similar feed forward networks. . . Except for activation function. If use activation function $f(X)$ after multiplication, the output $Y$ is : $Y=f(W'(f(WX) +B)) +B'$.  Note that each neuron in neural network without activation function $f$, it is just repetition of multiplications and additions.
+It make sense and we might already have seen for a long time since we met a concept of neural network or similar feed forward networks. . . Except for activation function. If use activation function $f(X)$ after multiplication, the output $Y$ is : $Y=f(W'(f(WX) +B)) +B'$.  Note that each neuron in neural network without activation function $f$, it is just repetition of multiplications and additions.
 
 ### It Is The Affine Transformation.
 I`m a noob and novice in linear algebra, but I know the **matrix-vector multiplication is a linear transform** of a vector. And linear transform is, moving my vector with some other linear space that has basis with row vectors in the matrix. For instance, we have an image in 2-Dimensional space, the transformation is just scaling up for some directions.  An Image of IU, a most adorable Korean singer, will be linearly transformed:
